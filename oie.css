@@ -66,6 +66,7 @@ a.btn-secondary:focus {
   color: #fff;
   border: 1px solid #c8008f !important;
   background: #c8008f;
+  outline: none;
 }
 .icc-block3 h4 {
   color: #1a1a1a;
