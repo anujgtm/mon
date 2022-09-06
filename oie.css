@@ -198,14 +198,14 @@ a.btn-secondary:focus {
 
 /* Tooltip */
 /* Tooltip container */
-.tooltip {
+.mu-tooltip {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted #c8008f; /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */
-.tooltip .tooltiptext {
+.mu-tooltip .mu-tooltiptext {
   visibility: hidden;
   width: 120px;
   background-color: #c8008f;
@@ -220,7 +220,7 @@ a.btn-secondary:focus {
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
+.mu-tooltip:hover .mu-tooltiptext {
   visibility: visible;
 }
 
