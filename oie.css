@@ -1,3 +1,10 @@
+/* Hidden Topic */
+.mu-hidden-topic {
+  display:none;
+}
+
+
+/* All Styles */
 h3.sectionname {
   color: #1a1a1a;
 }
