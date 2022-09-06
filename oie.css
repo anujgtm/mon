@@ -41,6 +41,10 @@ a.btn-primary {
     box-shadow: none;
     outline: none;
 }
+a.btn-primary:hover {
+  color: #c8008f !important;
+  background: #fff !important;
+}
 a.btn-primary:focus {
   outline: none;
 }
