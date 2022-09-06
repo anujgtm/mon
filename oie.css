@@ -49,11 +49,11 @@ a.btn-primary,
     color: #fff !important;
     box-shadow: none;
     outline: none;
-    border-radius: 0;
+    border-radius: 0 !important;
 }
 a.btn-primary:hover,
-.singlebutton .btn-primary,
-.lessonbutton .btn-primary {
+.singlebutton .btn-primary:hover,
+.lessonbutton .btn-primary:hover {
   color: #c8008f !important;
   background: #fff !important;
 }
@@ -66,11 +66,14 @@ a.btn-secondary {
     color: #c8008f !important;
     box-shadow: none;
     outline: none;
+    border-radius: 0 !important;
 }
-a.btn-secondary:focus {
+a.btn-secondary:focus,
+.singlebutton .btn-secondary:focus {
   outline: none;
 }
-.singlebutton .btn-secondary {
+.singlebutton .btn-secondary,
+.lessonbutton .btn-secondary {
   color: #8c8c8c;
   border: 1px solid #c8008f !important;
   background: #fff;
@@ -78,7 +81,7 @@ a.btn-secondary:focus {
   font-weight: normal !important;
 }
 .singlebutton .btn-secondary:hover,
-.singlebutton .btn-secondary:focus {
+.lessonbutton .btn-secondary:hover {
   color: #fff;
   border: 1px solid #c8008f !important;
   background: #c8008f;

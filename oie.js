@@ -71,46 +71,34 @@ window.addEventListener('load',function(){
 
 
     // Submit EventListener
-    document.querySelector('.drag-drop-submit').addEventListener('click', function () {
-        // console.log("No option is incorrect!");
-        // let error = document.createElement("p");
-        // error.innerHTML = "No option is incorrect!";
-        this.disabled = true;
-        buttonR.disabled = false;
-        buttonS.classList.toggle('hid');
-        buttonR.classList.toggle('hid');
-        sortable(".sortable-list", "disable");
-        feedback.classList.toggle('hid');
-    });
+    if (document.querySelector('.drag-drop-submit')) {
+        document.querySelector('.drag-drop-submit').addEventListener('click', function () {
+            // console.log("No option is incorrect!");
+            // let error = document.createElement("p");
+            // error.innerHTML = "No option is incorrect!";
+            this.disabled = true;
+            buttonR.disabled = false;
+            buttonS.classList.toggle('hid');
+            buttonR.classList.toggle('hid');
+            sortable(".sortable-list", "disable");
+            feedback.classList.toggle('hid');
+        });
+    }
 
     // Retry EventListener
-    document.querySelector('.retry-sort-button').addEventListener('click', function () {
-        buttonR.disabled = true;
-        sortable(".sortable-list", "enable");
-        feedback.classList.toggle('hid');
-        buttonS.classList.toggle('hid');
-        buttonR.classList.toggle('hid');
-        randomizeList();
-    });
+    if (document.querySelector('.retry-sort-button')) {
+        document.querySelector('.retry-sort-button').addEventListener('click', function () {
+            buttonR.disabled = true;
+            sortable(".sortable-list", "enable");
+            feedback.classList.toggle('hid');
+            buttonS.classList.toggle('hid');
+            buttonR.classList.toggle('hid');
+            randomizeList();
+        });
+    }
 
     
 
 
     
 });
-
-
-
-
-// Set tick for options page
-// <script type="text/javascript">// <![CDATA[
-// var transOptions = localStorage.getItem("options");
-//   if (transOptions != null && transOptions != "") {
-//     var transJson = JSON.parse(transOptions);
-//     transJson.ca_option1 = "yes";
-//     localStorage.setItem("options",JSON.stringify(transJson)); 
-//   } else {
-//     var transJson = { "ca_option1": "yes" };
-//     localStorage.setItem("options",JSON.stringify(transJson)); 
-//   }
-// // ]]></script>
