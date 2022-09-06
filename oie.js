@@ -31,26 +31,36 @@ window.addEventListener('load',function(){
 
 
     // Sortable Drag Drop
-    sortable('.sortable-list', {
-        forcePlaceholderSize: true,
-        placeholderClass: 'mb1 bg-navy border border-yellow',
-        hoverClass: 'bg-maroon yellow',
-        itemSerializer: function (item, container) {
-            item.parent = '[parentNode]'
-            item.node = '[Node]'
-            item.html = item.html.replace('<','&lt;')
-            return item
-        },
-        containerSerializer: function (container) {
-            container.node = '[Node]'
-            console.log(container);
-            return container
-        }
-    })
-    let sortableList = document.querySelector('.sortable-list');
-    let buttonS = document.querySelector('.drag-drop-submit'); 
-    let buttonR = document.querySelector('.retry-sort-button');
-    let feedback = document.querySelector('.feedback');
+    if($(".sortable-list").length > 0) {
+        sortable('.sortable-list', {
+            forcePlaceholderSize: true,
+            placeholderClass: 'mb1 bg-navy border border-yellow',
+            hoverClass: 'bg-maroon yellow',
+            itemSerializer: function (item, container) {
+                item.parent = '[parentNode]'
+                item.node = '[Node]'
+                item.html = item.html.replace('<','&lt;')
+                return item
+            },
+            containerSerializer: function (container) {
+                container.node = '[Node]'
+                console.log(container);
+                return container
+            }
+        })
+        let sortableList = document.querySelector('.sortable-list');
+        let buttonS = document.querySelector('.drag-drop-submit'); 
+        let buttonR = document.querySelector('.retry-sort-button');
+        let feedback = document.querySelector('.feedback');
+
+        // Sort start EventListener
+        sortable('.sortable-list')[0].addEventListener('sortstart', function(e) {
+            buttonS.disabled = false;
+        });
+
+        // Randomize List
+        randomizeList();
+    }
 
     // Function to randomize List items
     function randomizeList() {
@@ -59,10 +69,6 @@ window.addEventListener('load',function(){
         }
     }
 
-    // Sort start EventListener
-    sortable('.sortable-list')[0].addEventListener('sortstart', function(e) {
-        buttonS.disabled = false;
-    });
 
     // Submit EventListener
     document.querySelector('.drag-drop-submit').addEventListener('click', function () {
@@ -87,8 +93,7 @@ window.addEventListener('load',function(){
         randomizeList();
     });
 
-    // Randomize List
-    randomizeList();
+    
 
 
     
