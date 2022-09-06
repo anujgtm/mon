@@ -35,18 +35,24 @@ a.arts-nav-active {
 .arts-dropdown .arts-dropdown-btn:focus::after {
   background: #c8008f;
 }
-#page-content a.btn-primary {
+a.btn-primary {
     background: #c8008f;
     color: #fff;
     box-shadow: none;
     outline: none;
 }
-#page-content a.btn-secondary {
+a.btn-primary:focus {
+  outline: none;
+}
+a.btn-secondary {
     background: #fff;
     border: 1px solid #c8008f;
     color: #c8008f;
     box-shadow: none;
     outline: none;
+}
+a.btn-secondary:focus {
+  outline: none;
 }
 .singlebutton .btn-secondary {
   color: #8c8c8c;
