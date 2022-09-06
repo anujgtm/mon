@@ -214,7 +214,7 @@ a.btn-secondary:focus {
 /* Tooltip text */
 .mu-tooltip .mu-tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: auto;
   background-color: #c8008f;
   color: #fff;
   text-align: center;
@@ -223,15 +223,17 @@ a.btn-secondary:focus {
   position: absolute;
   z-index: 1;
   bottom: 150%;
-  left: 50%;
-  margin-left: -60px;
+  left: 0;
+  padding: 6px 12px;
+  max-width: 350px;
+  text-align: left;
 }
 
 .mu-tooltip .mu-tooltiptext::after {
   content: " ";
   position: absolute;
   top: 100%; /* At the bottom of the tooltip */
-  left: 50%;
+  left: 50px;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
