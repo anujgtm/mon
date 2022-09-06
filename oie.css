@@ -1,0 +1,76 @@
+h3.sectionname {
+  color: #1a1a1a;
+}
+.icc-link-box,
+.icc-link-box3 {
+  border: 1px solid #c8008f;
+}
+.icc-link-box:hover,
+.icc-link-box2:hover,
+.icc-link-box3:hover {
+  background-color: #c8008f;
+}
+#page-header a,
+#page-content a {
+  color: #8c8c8c;
+}
+#page-content a:focus {
+  background-color: #c8008f;
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+}
+a.arts-nav-active {
+  color: #1a1a1a !important;
+}
+.arts-nav a.arts-nav-active:after {
+  background: #c8008f;
+}
+.arts-num {
+  color: #8c8c8c;
+}
+.arts-nav a:hover::after,
+.arts-nav a:focus::after,
+.arts-dropdown .arts-dropdown-btn:hover::after,
+.arts-dropdown .arts-dropdown-btn:focus::after {
+  background: #c8008f;
+}
+#page-content a.btn-primary {
+    background: #c8008f;
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+}
+#page-content a.btn-secondary {
+    background: #fff;
+    border: 1px solid #c8008f;
+    color: #c8008f;
+    box-shadow: none;
+    outline: none;
+}
+.singlebutton .btn-secondary {
+  color: #8c8c8c;
+  border: 1px solid #c8008f !important;
+  background: #fff;
+  box-shadow: none !important;
+  font-weight: normal !important;
+}
+.singlebutton .btn-secondary:hover,
+.singlebutton .btn-secondary:focus {
+  color: #fff;
+  border: 1px solid #c8008f !important;
+  background: #c8008f;
+}
+.icc-block3 h4 {
+  color: #1a1a1a;
+}
+.icc-block3 hr,
+.icc-box hr {
+  background-color: #c8008f;
+}
+.header-banner {
+  background: transparent
+    url(https://lms.monash.edu/pluginfile.php/14369449/mod_resource/content/3/banner02.png) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
