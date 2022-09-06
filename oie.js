@@ -4,7 +4,7 @@ function highlight(obj,num){
 }
 
 
-$(document).ready(function(){
+window.addEventListener('load',function(){
     
     let mark = "";
     if ($(".completed-ca_option1")) {
