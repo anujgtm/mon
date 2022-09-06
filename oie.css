@@ -91,6 +91,10 @@ a.btn-secondary:focus {
 
 /* Option Screen */
 
+.lessonbutton a.completed:hover {
+  background: #c8008f;
+  color: #fff;;
+}
 .lessonbutton a.completed:before {
   display: inline-block;
   content: "";
