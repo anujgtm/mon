@@ -87,6 +87,18 @@ a.btn-secondary:focus {
 }
 
 
+/* Option Screen */
+
+.lessonbutton a.completed:before {
+  display: inline-block;
+  content: "";
+  transform: rotate(45deg);
+  height: 12px;
+  width: 5px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
 /* Slider */
 
 /* slider */
