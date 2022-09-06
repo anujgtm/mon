@@ -35,13 +35,15 @@ a.arts-nav-active {
 .arts-dropdown .arts-dropdown-btn:focus::after {
   background: #c8008f;
 }
-a.btn-primary {
+a.btn-primary,
+.singlebutton .btn-primary {
     background: #c8008f;
     color: #fff !important;
     box-shadow: none;
     outline: none;
 }
-a.btn-primary:hover {
+a.btn-primary:hover,
+.singlebutton .btn-primary {
   color: #c8008f !important;
   background: #fff !important;
 }
