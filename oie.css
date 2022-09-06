@@ -43,14 +43,17 @@ a.arts-nav-active {
   background: #c8008f;
 }
 a.btn-primary,
-.singlebutton .btn-primary {
+.singlebutton .btn-primary,
+.lessonbutton .btn-primary {
     background: #c8008f;
     color: #fff !important;
     box-shadow: none;
     outline: none;
+    border-radius: 0;
 }
 a.btn-primary:hover,
-.singlebutton .btn-primary {
+.singlebutton .btn-primary,
+.lessonbutton .btn-primary {
   color: #c8008f !important;
   background: #fff !important;
 }
