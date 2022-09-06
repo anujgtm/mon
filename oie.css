@@ -197,6 +197,13 @@ a.btn-secondary:focus {
 
 
 /* Tooltip */
+.table-mu-tooltip thead th {
+  padding: 14px 6px;
+}
+
+.table-mu-tooltip tbody td {
+  padding: 10px 6px;
+}
 /* Tooltip container */
 .mu-tooltip {
   position: relative;
@@ -211,12 +218,24 @@ a.btn-secondary:focus {
   background-color: #c8008f;
   color: #fff;
   text-align: center;
-  padding: 5px 0;
   border-radius: 6px;
- 
-  /* Position the tooltip text - see examples below! */
+  padding: 5px 0;
   position: absolute;
   z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.mu-tooltip .mu-tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #c8008f transparent transparent transparent;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
