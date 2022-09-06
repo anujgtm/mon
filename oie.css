@@ -93,10 +93,11 @@ a.btn-secondary:focus {
   display: inline-block;
   content: "";
   transform: rotate(45deg);
-  height: 12px;
-  width: 5px;
-  border-bottom: 2px solid #fff;
-  border-right: 2px solid #fff;
+  height: 16px;
+  width: 8px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+  margin-right: 10px;
 }
 
 /* Slider */
