@@ -10,13 +10,13 @@ window.addEventListener('load',function(){
     let buttonR;
     let feedback;
     let mark = "";
-    if ($(".completed-ca_option1")) {
+    if ($(".completed-ca_option1").length > 0) {
         mark = "ca_option1";
     }
-    if($(".completed-ca_option2")) {
+    if($(".completed-ca_option2").length > 0) {
         mark = "ca_option2";
     }
-    if($(".completed-ca_option3")) {
+    if($(".completed-ca_option3").length > 0) {
         mark = "ca_option3";
     }
     
