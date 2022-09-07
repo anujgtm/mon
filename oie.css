@@ -292,7 +292,8 @@ a.btn-secondary:focus,
   border-radius: 4px;
   box-shadow: rgb(0 0 0 / 20%) 0px 0px 2.969696px;
   margin: 5px 0;
-  position: relative
+  position: relative;
+  padding-left: 40px;
 }
 
 .sortable-list-item:before {
