@@ -27,7 +27,7 @@ window.addEventListener('load',function(){
             transJson[mark] = "yes";
             localStorage.setItem("options",JSON.stringify(transJson)); 
         } else {
-            var transJson = { mark: "yes" };
+            var transJson[mark] = "yes";
             localStorage.setItem("options",JSON.stringify(transJson)); 
         }
     }
