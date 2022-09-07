@@ -66,6 +66,7 @@ a.btn-primary:hover,
 .lessonbutton .btn-primary:hover {
   color: #c8008f !important;
   background: #fff !important;
+  outline: 1px solid #c8008f !important;
 }
 a.btn-primary:focus {
   outline: none;
@@ -92,7 +93,7 @@ a.btn-secondary:focus,
 }
 .singlebutton .btn-secondary:hover,
 .lessonbutton .btn-secondary:hover {
-  color: #fff;
+  color: #fff !important;
   border: 1px solid #c8008f !important;
   background: #c8008f;
   outline: none;
