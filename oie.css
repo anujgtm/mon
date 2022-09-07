@@ -284,10 +284,17 @@ a.btn-secondary:focus,
 }
 .sortable-list-item {
   padding: 10px 8px;
-  background-color: #c8018f;
-  color: #fff;
+  background-color: #d6d6d6;
+  color: #000;
   margin: 1px;
   cursor: all-scroll;
+  border:1px solid #c6c6c6;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 0px 2.969696px;
+}
+.sortable-list-item:hover {
+  background-color: #edd6e9;
+  border: 1px solid rgb(212,190,216);
 }
 .sortable-list-item[draggable=false] {
   opacity: 0.4;
