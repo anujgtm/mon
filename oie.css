@@ -291,6 +291,7 @@ a.btn-secondary:focus,
   border:1px solid #c6c6c6;
   border-radius: 4px;
   box-shadow: rgb(0 0 0 / 20%) 0px 0px 2.969696px;
+  margin: 5px 0;
 }
 .sortable-list-item:hover {
   background-color: #edd6e9;
