@@ -5,6 +5,11 @@
 
 
 /* All Styles */
+
+.border-top-primary {
+  border-top: 2px solid #c8008f !important;
+}
+
 h3.sectionname {
   color: #1a1a1a;
 }
