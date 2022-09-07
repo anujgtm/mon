@@ -30,7 +30,8 @@ window.addEventListener('load',function(){
             console.log(transJson);
             localStorage.setItem("options",JSON.stringify(transJson)); 
         } else {
-            var transJson[mark] = "yes";
+            var transJson = {};
+            transJson[mark] = "yes";
             localStorage.setItem("options",JSON.stringify(transJson)); 
         }
     }
