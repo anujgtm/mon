@@ -5,7 +5,10 @@ function highlight(obj,num){
 
 
 window.addEventListener('load',function(){
-    
+    let sortableList;
+    let buttonS; 
+    let buttonR;
+    let feedback;
     let mark = "";
     if ($(".completed-ca_option1")) {
         mark = "ca_option1";
@@ -69,10 +72,10 @@ window.addEventListener('load',function(){
                 return container
             }
         })
-        let sortableList = document.querySelector('.sortable-list');
-        let buttonS = document.querySelector('.drag-drop-submit'); 
-        let buttonR = document.querySelector('.retry-sort-button');
-        let feedback = document.querySelector('.feedback');
+        sortableList = document.querySelector('.sortable-list');
+        buttonS = document.querySelector('.drag-drop-submit'); 
+        buttonR = document.querySelector('.retry-sort-button');
+        feedback = document.querySelector('.feedback');
 
         // Sort start EventListener
         sortable('.sortable-list')[0].addEventListener('sortstart', function(e) {
