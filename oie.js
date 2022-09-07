@@ -24,10 +24,7 @@ window.addEventListener('load',function(){
     if (mark!="") {
         if (transOptions != null && transOptions != "") {
             var transJson = JSON.parse(transOptions);
-            console.log(transJson);
-            console.log(mark);
             transJson[mark] = "yes";
-            console.log(transJson);
             localStorage.setItem("options",JSON.stringify(transJson)); 
         } else {
             var transJson = {};
