@@ -13,10 +13,10 @@ window.addEventListener('load',function(){
     if ($(".completed-ca_option1")) {
         mark = "ca_option1";
     }
-    else if($(".completed-ca_option2")) {
+    if($(".completed-ca_option2")) {
         mark = "ca_option2";
     }
-    else if($(".completed-ca_option3")) {
+    if($(".completed-ca_option3")) {
         mark = "ca_option3";
     }
     
@@ -24,7 +24,10 @@ window.addEventListener('load',function(){
     if (mark!="") {
         if (transOptions != null && transOptions != "") {
             var transJson = JSON.parse(transOptions);
+            console.log(transJson);
+            console.log(mark);
             transJson[mark] = "yes";
+            console.log(transJson);
             localStorage.setItem("options",JSON.stringify(transJson)); 
         } else {
             var transJson[mark] = "yes";
