@@ -35,20 +35,16 @@ window.addEventListener('load',function(){
 
     if($(".ca-options-screen").length > 0) {
         var transOptions = localStorage.getItem("options");
-        var nodeOption1 = document.querySelector(".ca_option1");
         var nodeOption2 = document.querySelector(".ca_option2");
         var nodeOption3 = document.querySelector(".ca_option3");
 
         if (transOptions != null && transOptions != "") {
             var transJson = JSON.parse(transOptions);
-            if(transJson.hasOwnProperty("ca_option1") && transJson.ca_option1 == "yes") {
-            if(nodeOption1) { nodeOption1.classList.add("completed");}
-            }
             if(transJson.hasOwnProperty("ca_option2") && transJson.ca_option2 == "yes") {
-            if(nodeOption2) { nodeOption2.classList.add("completed");}
+                if(nodeOption2) { nodeOption2.classList.add("completed");}
             }
             if(transJson.hasOwnProperty("ca_option3") && transJson.ca_option3 == "yes") {
-            if(nodeOption3) { nodeOption3.classList.add("completed");}
+                if(nodeOption3) { nodeOption3.classList.add("completed");}
             }
         }
     }
